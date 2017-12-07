@@ -24,8 +24,9 @@ class ROSVisualizer():
         print(g.source)
 
 if __name__ == '__main__':
+    files = argv[1].split(':')
     ROSVisualizer("robot_name", 
         "ROSViz",
-        ['example_node.yaml', 'lane_filter_node.yaml'],
+        files,
         "out.gv",
         "brbg4")
