@@ -1,0 +1,43 @@
+description: Uses filtering to locate robot within lane.
+parameters: {}
+subscriptions:
+    segment_list:
+        topic: ~segment_list
+        type: duckietown_msgs/SegmentList
+        desc: Line detections
+        queue_size: 1
+        timeout: 3
+    switch:
+        topic: ~switch
+        type: duckietown_msgs/BoolStamped
+        desc: Switch...
+        queue_size: 1
+        timeout: 3
+    velocity:
+        topic: ~velocity
+        type: duckietown_msgs/Twist2DStamped
+        desc: Velocity
+        queue_size: 1
+        timeout: 3
+publishers:
+    lane_pose:
+        topic: ~lane_pose_lf
+        type: duckietown_msgs/LanePose
+        desc: Estimated pose
+        queue_size: 1
+    belief_img:
+        topic: ~belief_img
+        type: duckietown_msgs/Image
+        desc: Estimated pose
+        queue_size: 1
+    entropy:
+        topic: ~entropy
+        type: duckietown_msgs/Float32
+        desc: Estimated pose
+        queue_size: 1
+    in_lane:
+        topic: ~in_lane
+        type: duckietown_msgs/BoolStamped
+        desc: Estimated pose
+        queue_size: 1
+contracts: {}

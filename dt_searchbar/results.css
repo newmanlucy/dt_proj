@@ -1,0 +1,28 @@
+#searchdiv {
+  float: right;
+  margin: 5px;
+}
+
+#searchbox {
+  padding: 2px;  
+}
+
+#duckieImg {
+  height: auto; 
+  width: 13em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.thisPageNumLink { 
+  color: #333;
+  background-color: #DDD;
+  padding: 3px;
+}
+
+.pageNumLink {
+  text-decoration: none;
+ }
+
+.dummy {
+  background-color: #F00;
+}

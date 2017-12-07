@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search results</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.0/jquery.mark.es6.js"></script>
+    <link rel="stylesheet" href="duckietown.css">
+    <link rel="stylesheet" href="results.css">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="followPURL.js"></script>
+    <script type="text/javascript" src="results.js"></script>
+</head>
+<body>
+    <div id="searchdiv">
+        <form action="results.html">
+           <input type="text" id="searchbox" name="searchbox" placeholder="search">
+        </form>
+    </div>
+
+    <center>
+    <img src="duckie.png" style="height: auto; width: 13em; margin-top: 4em; margin-bottom: 2em;" />
+    </center>
+    <div id="showing"></div>
+    <div id="pageLinks"></div>
+    <div id="searchresults"></div>
+</body>
+</html>

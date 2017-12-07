@@ -1,0 +1,21 @@
+description: This node processes segment lists to return a lane pose. [more details on filtering process]
+parameters:
+    k_d:
+        type: float
+        desc: The derivative gain.
+        default: 1.02
+subscriptions:
+    segment_list:
+        topic: ~segment_list
+        type: duckietown_msgs/SegmentList
+        desc: Line detections
+        queue_size: 1
+        timeout: 3
+
+publishers:
+    lane_pose:
+        topic: ~lane_pose_example
+        type: duckietown_msgs/LanePose
+        desc: Estimated pose
+        queue_size: 1
+contracts: {}
