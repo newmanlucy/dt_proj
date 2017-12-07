@@ -8,4 +8,4 @@ Assuming the markdown files are stored in `~/duckuments/docs`, you can create th
 
     $ ./make-index.sh ~/duckuments/docs
 
-And then run a local server (port 8000 for example) and go to `localhost:8000/results.html`, and type a query inty to searchbar.
+And then run a local server (port 8000 for example) and go to `localhost:8000/results.html`, and type a query into the searchbar.
