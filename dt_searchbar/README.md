@@ -2,7 +2,7 @@
 
 This requires `lunr` for indexing. To install with `npm` run:
 
-    $ npm install lunr
+    $ npm install -g lunr
 
 Assuming the markdown files are stored in `~/duckuments/docs`, you can create the index by running:
 
